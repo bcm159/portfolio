@@ -1,0 +1,526 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap');
+
+/*서체*/
+.Meie{
+	font-family: 'Pinyon Script', cursive;
+}
+
+#wrap{
+	width: 100%;
+	min-width: 1020px;
+}
+
+
+.container{
+	width: 1020px;
+	margin:auto;
+}
+
+
+header{
+	background: #ccc;
+	height: 80px;
+	font-weight: bold;
+	
+}
+
+.logo{
+	float:left;
+	line-height: 80px;
+	font-size: 1.6rem;
+	letter-spacing: 5px;
+	color:#00005d;
+	width: 100px;
+	
+}
+.logo a{}
+.logo a span{
+	display:block;
+	text-align: center;
+	font-size: 2.5rem;
+}
+header nav{}
+header ul{
+	float:right;
+}
+header li{
+	float:left;
+	cursor: pointer;
+	line-height: 77px;
+	font-size: 1.5rem;
+	transition:0.3s;
+}
+header li+li{
+	padding-left: 100px;
+}
+
+
+
+nav li::after{
+	content:'';
+	display:block;
+	border-bottom: 3px solid rgba(0, 0, 0, 0.4);
+	width: 0;
+	transition:0.3s;
+}
+nav li:hover::after{
+	width: 100%;
+}
+nav li:hover{
+  color:white;
+}
+
+
+
+#contents{
+	margin:40px 0;
+	overflow: hidden;
+}
+
+#photo{
+	float:left;
+}
+#photo h2{
+	font-size: 2.5rem;
+	width: 200px;
+/*	font-style: italic;*/
+}
+/*
+#photo span{
+	display:block;
+	border: 1px solid #ccc;
+	width: 170px;
+	margin-top: 10px;
+}
+*/
+#photo img{
+	margin-top: 25px;
+	width: 300px;
+	height: 400px;
+	box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.35);
+}
+.explain{
+	float:left;
+	width: 610px;
+	height: 400px;
+	margin: 100px 0 0 80px;
+}
+.explain h3{
+	font-size: 2.5rem;
+	font-weight: bold;
+	color:#525252;
+}
+.explain .pnum1{
+	margin-top: 30px;
+	font-size: 1.3rem;
+}
+
+.explain p+p{
+	font-size: 1.3rem;
+	margin-top: 30px;
+}
+
+.sliders{}
+
+
+
+#contents2{}
+.skill{
+	margin-top: 50px;
+  overflow: hidden;
+}
+
+.skilltxtbox{}
+.skilltxtbox h2{
+/*	text-align: center;*/
+	font-size: 2.5rem;
+	font-weight: bold;
+	margin-top: 80px;
+}
+.skilltxtbox p{
+	margin-top: 30px;
+	font-size: 1.5rem;
+/*	text-align: center;*/
+	color:#525252;
+	
+}
+.skilltxtbox p::after{
+  content: '';
+	display:block;
+/*	margin-top: 10px;*/
+  padding-top: 20px;
+	border-bottom: 1px solid #ccc;
+	width: 90%;
+  float: right;
+}
+
+
+/*history*/
+
+.prac{
+	margin-bottom: 40px;
+}
+.prac li{}
+.prac li .listbox{
+	/*border:1px solid #ccc;*/
+	width: 100%;
+	height: 150px;
+	padding-bottom: 15px;
+}
+.prac li #listbox1{
+	margin-top: 40px;
+}
+.prac li .listbox .txtbox{
+	float:left;
+	margin-left: 20px;
+	margin-top: 10px;
+}
+.prac li .listbox .txtbox .exname{
+	font-size: 2.5rem;
+	font-weight: 300;
+	color: #00005d;
+	margin: 20px 0;
+}
+
+.prac li .listbox .txtbox span{
+	margin-left: 10px;
+}
+
+.prac li .listbox .explainbox{
+	float:right;
+	padding-top: 2rem;
+	margin-right: 8rem;
+}
+.prac li .listbox .explainbox p{
+	margin-left: 8px;
+}
+.prac li .listbox .explainbox .detailsapn{
+	font-size: 20px;
+	margin-right: 20px;
+}
+.prac li .listbox .explainbox .detailsapn2{
+	font-size: 20px;
+	margin-right: 29rem;
+}
+.prac li .listbox .explainbox .detailsapn3{
+	font-size: 20px;
+	margin-right: 10rem;
+}
+.prac li .listbox .explainbox .detailsapn4{
+	font-size: 20px;
+	margin-right: 4rem;
+}
+
+
+.prac li .listbox .explainbox p{
+	margin-top: 7px;
+	font-size: 15px;
+}
+
+.prac li .listbox .explainbox .num1{
+	margin-top: 17px;
+}
+
+
+
+.skillimg{
+	margin:50px 0 50px 30px;
+	overflow: hidden;
+}
+.frameworkimg{}
+.dataimg{}
+.skillimg ul li{
+	float:left;
+	text-align: center;
+	
+}
+.skillimg ul li+li{
+	margin-left: 60px;
+}
+.skillimg img{}
+.skillimg p{
+	margin-top: 10px;
+	font-weight: bold;
+}
+
+.frame p::after{
+	width: 77%;
+}
+
+.data p::after{
+	width: 93%;
+}
+.slidecover{
+  overflow: hidden;
+}
+.bgfixed{
+	background: url("../img/headerbg3.jpg") center no-repeat fixed;
+	background-size: contain;
+	padding: 1rem 0;
+  text-align: center;
+  color: #fff;
+	opacity: 0.8;
+	margin:200px 0;
+}
+
+.bgfixed .bgslide{
+/*  position:relative;*/
+  width: 500px;
+  height:200px;
+  text-align: center;
+  opacity: 1;
+/*  display: flex;*/
+/*  width: calc(100%*3);*/
+  margin: auto;
+  padding: 2rem;
+  
+  
+}
+
+.bgfixed .bgslide li{
+/*  float: left;*/
+  position:absolute;
+  width: 500px;
+/*  animation: slideimg 8s infinite;*/
+  margin:80px 0 auto;
+  opacity: 0;
+}
+
+.bgslide li:nth-child(1){
+  animation: trans 9s infinite;
+}
+.bgslide li:nth-child(2){
+  animation: trans 9s 3s infinite
+}
+.bgslide li:nth-child(3){
+  animation: trans 9s 6s infinite;
+}
+
+
+.bgslide h2{
+	font-size: 2rem;
+}
+.bgslide p{
+/*	margin-top: 20px;*/
+	font-size: 1.5rem;
+}
+
+@keyframes trans{
+  0%{
+    opacity:0;
+  }
+  33%{
+    opacity:0.8;
+  }
+  66%{
+    opacity:0;
+  }
+  100%{
+    opacity:0;
+  }
+
+}
+
+
+
+
+.project{
+	margin-top: 50px;
+	overflow: hidden;
+}
+.project .inlist{
+	padding: 3rem 0;
+	overflow:hidden;
+	
+}
+.project li{
+	float:left;
+	width: 1000px;
+	transition:0.5s;
+	
+}
+.project li+li{
+	margin-left: 24px;
+}
+
+.project li img{
+	float:left;
+	width: 400px;
+	height: 300px;
+	
+}
+.project li .textbox{
+	float:left;
+/*	padding-top: 10px;*/
+	margin-left: 15rem;
+}
+.project li span{
+	padding: 10px 0 0 10px;
+	letter-spacing: 1px;
+	display:block;
+
+}
+
+
+.project li .prospan1{
+	font-weight: bold;
+	color:#777777;
+	margin-top: 5px;
+}
+.project li .prospan2{
+	font-size: 2.5rem;
+	font-weight: bold;
+}
+.project li .prospan3{
+	line-height: 2;
+	margin-top: 30px;
+}
+
+.project li .prospan4{
+	margin-top: 30px;
+}
+
+.inlist li:hover{
+	border-top-color: black;
+  transform: translateY(-10px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+
+.skilltxtbox-p{
+	margin-top: 50px;
+}
+footer{
+	margin: 50px 0;
+	overflow: hidden;
+}
+
+#photo2{
+	margin-top: 30px;
+	float:left;
+}
+#photo2 h2{}
+#photo2 img{
+	
+	display:block;
+	margin:50px;
+	width: 300px;
+	height: 300px;
+	border-radius: 150px;
+	box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.35);
+}
+.contacttxt{
+	float:left;
+	width: 320px;
+	margin: 100px 0 0 150px;
+}
+.contacttxt h2{
+	font-size: 2rem;
+	color:#ccc;
+}
+.contacttxt h2+h2{	
+	margin-top: 20px;
+}
+.contacttxt p{
+	font-size: 1.4rem;
+	margin: 1.2rem;
+}
+
+/*##############################slidebutton###########################################*/
+
+#slide{
+	width: 300px;
+	background: #333;
+	position:fixed;
+	top: 0;
+	bottom: 0;
+	z-index: 999;
+	left:-300px;
+}
+#slide ul{
+	margin: 100px 0 0 50px;
+}
+#slide li{}
+#slide li a{
+	display:block;
+	font-size: 1.3rem;
+	color:#666;
+	padding: 10px 0;
+	transition:0.3s;
+	font-weight: bold;
+}
+#slide li:hover a{
+	color:#fff;
+}
+
+.xbtn{
+	position:absolute;
+	top: 20px;
+	right: 20px;
+	cursor: pointer;
+	transition:0.3s;
+}
+.xbtn:hover{
+	transform:rotate(45deg);
+}
+.xbtn img{}
+
+.mbtn{
+	width: 30px;
+	height: 30px;	
+	cursor:pointer;
+	position:fixed;
+	top: 27px;
+	left: 30px;
+}
+.mbtn span{
+	width: 30px;
+	height: 5px;
+	display:block;
+	background: #000;
+	margin-bottom: 5px;
+	transition:0.3s;
+}
+
+.mbtn:hover .bar01{
+	transform: rotate(90deg) translate(10px,0);
+}
+.mbtn:hover .bar02{
+	opacity: 0;
+	transform:translate(-50px,0);
+}
+.mbtn:hover .bar03{
+	transform: translate(0,-10px);
+}
+
+.over{
+	position:fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.3);
+	display:none;
+}
+
+
+/*##################################################################################*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

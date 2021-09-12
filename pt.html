@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JJH</title>
+	
+	<link rel="stylesheet" href="pt.css/common.css">
+	<link rel="stylesheet" href="pt.css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="pt.js/pt.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+	<style>
+		@import url('	https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+		.Sriracha{
+			font-family: 'Sriracha', cursive;
+		}
+		
+		
+	</style>
+</head>
+<body>
+<!--	#wrap>header+#contents+.sliders+#contents2+footer-->
+	<div id="wrap">
+
+		<header>
+			<div class="container">
+<!--			.logo+nav-->
+			<div class="logo">
+				<a href="#" class="Sriracha"><span>JJH</span></a>
+			</div>
+				<nav>
+					<ul>
+						<li onclick="pMove(1)">About</li>
+						<li onclick="pMove(2)">History</li>
+						<li onclick="pMove(3)">Skill</li>
+						<li onclick="pMove(4)">Project</li>
+						<li onclick="pMove(5)">Contact</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<div id="contents">
+			<div class="container">
+<!--			#photo+.explain-->
+			<div id="photo" class="div1">
+				<h2 class="Meie1">About Me</h2>
+				<img src="img/myphoto/KakaoTalk_20201020_021730243.jpg" alt="">
+			</div>
+			<div class="explain">
+				<h3>노력하는 개발자</h3>
+				<p class="pnum1">&#8226; 안녕하세요 백엔드 개발자를 희망하는 29살 장지혁입니다.</p>
+				
+				<p>&#8226; 대학 강연을 통해 코딩에 대하여 관심을 갖게 된 후 개발자의 꿈을 꾸게 되었습니다.</p>
+				<p>&#8226; 늦은 나이에 시작하였지만 더 많은 열정으로 공부를 하려 노력하고 있습니다.</p>
+				<p>&#8226; 차분한 뉴에이지 음악을 좋아하며, 사람들과 대화 나누는 것을 좋아합니다.</p>
+				<p>&#8226; 많은 것이 부족하지만 제가 좋아하는 일, 계속해 노력하여 더 잘하고 싶습니다 : )</p> 
+				
+
+			</div>
+			</div>
+		</div>
+		
+<!--		<div class="container">	-->
+<!--		</div>-->
+		
+		<div id="contents2" class="div2">
+<!--			.skill+.project-->
+			<div class="skill">
+				<div class="container">
+				
+				
+				<div class="skilltxtbox" id="hstrbox">
+						<h2 >History</h2>
+						<p>Experience</p>
+					</div>
+					
+					<ul class="prac">
+						<li>
+							<div class="listbox" id="listbox1">
+								<div class="txtbox">
+									<span class="exname">데이터 엔지니어</span>
+									<span class="calendarspan"><i class="far fa-calendar-alt"> 2021-01-01~2021-05-31</i></span>
+								</div>
+								<div class="explainbox">
+									<span class="detailsapn">한양대학교 ERICA 바이오 데이터 엔지니어</span>
+									
+									<p class="num1">&#8226; Python을 사용하여 open API 의료 데이터 추출</p>
+									<p>&#8226; Python, SQL 활용 의료 데이터 전처리</p>
+								</div>
+							</div>
+						</li>
+						
+						<li>
+							<div class="listbox">
+								<div class="txtbox">
+									<span class="exname">수학,물리 강사</span>
+									<span class="calendarspan"><i class="far fa-calendar-alt"> 2018-06-01~2020-12-28</i></span>
+								</div>
+								<div class="explainbox">
+									<span class="detailsapn2">g1230</span>
+									
+									<p class="num1">&#8226; 초,중,고등학교 수학 강사</p>
+									<p class="num1">&#8226; 고등학교 물리1 강사</p>
+								</div>
+							</div>
+						</li>
+						
+						<li>
+							<div class="listbox">
+								<div class="txtbox">
+									<span class="exname">대학교 졸업</span>
+									<span class="calendarspan"><i class="far fa-calendar-alt"> 2014-03-01~2020-08-21</i></span>
+								</div>
+								<div class="explainbox">
+									<span class="detailsapn3">영남대학교 첨단기계공학과 졸업</span>
+									
+									<p class="num1">&#8226; 4학년 2학기 자료구조2(알고리즘), 운영체제, Python 수강</p>
+									<p>&#8226; 일반기계기사 취득 (2020.06.26)</p>
+									<p>&#8226; 정보처리기능사 취득 (2016.09.16)</p>
+								</div>
+							</div>
+						</li>
+						
+						<li>
+							<div class="listbox">
+								<div class="txtbox">
+									<span class="exname">학부 연구원</span>
+									<span class="calendarspan"><i class="far fa-calendar-alt"> 2019-09-01~2020-02-15</i></span>
+								</div>
+								<div class="explainbox">
+									<span class="detailsapn4">영남대학교 EMSL 자율주행 학부 연구생</span>
+									
+									<p class="num1">&#8226; 우분투 OS 활용 시스템 구축</p>
+									<p>&#8226; 라즈베리파이 활용 자율주행 기능 설치 및 보완</p>
+									<p>&#8226; SLAM 기반 내비게이션 기능 연구 및 설치</p>
+								</div>
+							</div>
+						</li>
+						
+						
+					</ul>
+					
+<!--*******************************************************************************************************-->
+				<div class="skilltxtbox div3">
+					<h2>Skill</h2>
+					<p>Language</p>
+				</div>
+				<div class="skillimg">
+					<ul>
+						<li>
+							<img src="skill/html96.png" alt="">
+							<p>HTML</p>
+						</li>
+						<li>
+							<img src="skill/css96.png" alt="">
+							<p>CSS</p>
+						</li>
+						<li>
+							<img src="skill/javascript96.png" alt="">
+							<p>JavaScript</p>
+						</li>
+						<li>
+							<img src="skill/java96.png" alt="">
+							<p>Java</p>
+						</li>
+						<li>
+							<img src="skill/python96.png" alt="">
+							<p>Python</p>
+						</li>
+						
+					</ul>
+				</div>
+
+
+				<div class="skilltxtbox frame">
+					<p>FrameWork &amp; DataBase</p>
+				</div>
+				<div class="skillimg">
+					<ul>
+						<li>
+							<img src="skill/spring.png" alt="">
+							<p>spring</p>
+						</li>
+						<li>
+							<img src="skill/mariaDB.png" alt="">
+							<p>mariaDB</p>
+						</li>
+					</ul>
+				</div>
+				
+
+				</div>
+
+			</div>
+			<div class="slidecover">
+        <div class="bgfixed">
+          <ul class="bgslide">
+            <li>
+              <h2>Major</h2>
+              <p>Mechanic Engineer</p>
+            </li>
+            <li>
+              <h2>Certificate</h2>
+              <p>일반기계기사</p>
+              <p>정보처리 기능사</p>
+            </li>
+            <li>
+              <h2>Motto</h2>
+              <p>Time waits for no one</p>
+            </li>
+          </ul>
+        </div>
+			</div>
+
+			
+			<div class="project div4">
+				<div class="container">
+					<div class="skilltxtbox">
+						<h2>Project</h2>
+						<p>Individual</p>
+					</div>
+					
+					<ul class="inlist">
+						<li>
+							<img src="img/hotdog.png" alt="">
+							<div class="textbox">
+
+								<span class="prospan2">xoxo 핫도그 홈페이지</span>
+								<span class="prospan1">기간 : ( 2021-07-01 ~ 진행중 )</span>
+								<span class="prospan3"> &#8226; HTML,CSS,JS 를 이용한 홈페이지 시각화 구현<br>
+								&#8226; Spring Security를 이용한 로그인, 회원가입 기능 구축<br>
+								&#8226; JSP,Spring 을 이용하여 게시판(CRUD, Pagination) 구축 <br>
+								&#8226; ajax를 이용한 댓글 구현 (진행중)</span>
+								<a href="https://github.com/bcm159/xoxoproject"><span class="prospan4">&#8226 github : https://github.com/bcm159/xoxoproject </span></a> 
+							</div>
+						</li>
+					</ul>
+					
+					
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div class="container div5">
+					<div class="skilltxtbox">
+						<h2>Contact Me</h2>	
+					</div>
+					<div id="photo2">
+						<img src="img/myphoto/KakaoTalk_20201025_234238233.jpg" alt="">
+						
+						</div>
+					<div class="contacttxt">
+							<h2>E-mail</h2>
+							<p>&#8226; bcm159@naver.com</p>
+							<h2>Address</h2>
+							<p>&#8226; Seo-gu Incheon Republic of Korea</p>
+							<h2>Phone</h2>
+							<p>&#8226; 010-9545-2410</p>
+						
+					</div>
+				
+			</div>
+			
+		</footer>
+<!--		slidebutton-->
+<!--		#slide+.mbtn-->
+		<div id="slide">
+<!--			ul>li*4>a[#]-->
+			<ul>
+				<li onclick="pMove(1)"><a href="#">About</a></li>
+				<li onclick="pMove(2)"><a href="#">history</a></li>
+				<li onclick="pMove(3)"><a href="#">Skill</a></li>
+				<li onclick="pMove(4)"><a href="#">Project</a></li>
+				<li onclick="pMove(5)"><a href="#">Contact</a></li>
+			</ul>
+			
+			<button class="xbtn">
+				<img src="img/x_img.png" alt="">
+			</button>
+		</div>
+		
+		<div class="over"></div>
+		<div class="mbtn">
+			<span class="bar01"></span>
+			<span class="bar02"></span>
+			<span class="bar03"></span>
+		</div>
+		
+	</div>
+	
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
