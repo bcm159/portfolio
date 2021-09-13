@@ -205,7 +205,7 @@ nav li:hover{
 }
 .prac li .listbox .explainbox .detailsapn3{
 	font-size: 20px;
-	margin-right: 10rem;
+	margin-right: 9rem;
 }
 .prac li .listbox .explainbox .detailsapn4{
 	font-size: 20px;
@@ -353,7 +353,7 @@ nav li:hover{
 .project li .textbox{
 	float:left;
 /*	padding-top: 10px;*/
-	margin-left: 15rem;
+	margin-left: 14rem;
 }
 .project li span{
 	padding: 10px 0 0 10px;
@@ -378,7 +378,6 @@ nav li:hover{
 }
 
 .project li .prospan4{
-	margin-top: 30px;
 }
 
 .inlist li:hover{
